@@ -10,14 +10,13 @@ module.exports = ( app, fs ) => {
   var bodyParser = require('body-parser')
 
 
-
+/*
   var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'fontmaker',
     database: 'fontmaker',
   })
-
   connection.connect( (err) => {
     if( err ){
       console.error('mysql connection error')
@@ -28,6 +27,7 @@ module.exports = ( app, fs ) => {
       console.log('연결에 성공하였습니다.')
     }
   })
+  */
 
   //파일 업로드 코드
   var storage = multer.diskStorage({
