@@ -17,7 +17,6 @@ module.exports = ( app, fs ) => {
     password: 'fontmaker',
     database: 'fontmaker',
   })
-
   connection.connect( (err) => {
     if( err ){
       console.error('mysql connection error')
@@ -29,6 +28,7 @@ module.exports = ( app, fs ) => {
     }
   })
 */
+
   //파일 업로드 코드
   var storage = multer.diskStorage({
     destination: ( req, file, cb ) => {
