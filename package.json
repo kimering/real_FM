@@ -4,12 +4,16 @@
   "private": true,
   "gypfile": true,
   "scripts": {
-    "start": "node ./app"
+
+    "compile": "node-gyp rebuild",
+    "start": "node app.js"
+
   },
   "dependencies": {
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
+
     "ejs": "^2.5.6",
     "express": "~4.15.2",
     "jade": "~1.11.0",
@@ -19,5 +23,19 @@
     "nan": "^2.6.2",
     "node-gyp": "^3.6.2",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "description": "fontmaker new version",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimering/real_FM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimering/real_FM/issues"
+  },
+  "homepage": "https://github.com/kimering/real_FM#readme",
+  "keywords": []
 }
