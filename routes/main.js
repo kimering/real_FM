@@ -10,7 +10,7 @@ module.exports = ( app, fs ) => {
   var bodyParser = require('body-parser')
 
 
-
+/*
   var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -28,7 +28,7 @@ module.exports = ( app, fs ) => {
       console.log('연결에 성공하였습니다.')
     }
   })
-
+*/
   //파일 업로드 코드
   var storage = multer.diskStorage({
     destination: ( req, file, cb ) => {
@@ -55,6 +55,10 @@ module.exports = ( app, fs ) => {
 
   app.get( '/upload', ( req, res ) => {
     res.render( 'upload' )
+  })
+
+  app.post( '/loading', ( req, res ) => {
+    res.render( 'loading' )
   })
 
   app.get( '/download/:field', ( req, res ) => {

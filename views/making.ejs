@@ -4,118 +4,61 @@
     <div class="row">
       <h2 class="header" style="font-family: 'Dosis'; text-shadow: 2px 2px 2px #aaa">Font Maker</h2>
       <br>
-      <p>사용법이랑 설명이 들어갈 자리입니당 </p>
+      <p>각 form 에 맞도록 설명을 채워 넣고, 이미지를 업로드한 후 '제출' 버튼을 눌러주세요. 잠시 기다리면 당신만의 폰트가 만들어집니다. </p>
       <br>
       <br>
       <h4><a class="deep-purple-text" href="#">Start</a></h4>
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="font_name" type="text" class="validate">
-            <label for="font_name">Font Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="font_note" type="text" class="validate">
-            <label for="font_note">Font Note</label>
-          </div>
+
+      <form class="" action="loading" method="post">
+
+        <div class="input-field col s6">
+          <input id="font_name" type="text" class="validate">
+          <label for="font_name">Font Name</label>
         </div>
-      </form>
-    </div>
-  </div>
+        <div class="input-field col s6">
+          <input id="font_note" type="text" class="validate">
+          <label for="font_note">Font Note</label>
+        </div>
 
-    <div class="file-field input-field">
-      <ul class="constainer" id="capital-making">
-        <li>
-          <h4><a class="deep-purple-text text-darken-3" href="#">Capital-making</a></h4>
-          <p>대문자로 쓴 '문장' 이미지를 입력해주세요 :-) </p>
+        <br><br><br><br><br>
 
-          <form action="/upup" id="testup" method="post" enctype="multipart/form-data">
-            <div class="btn deep-purple lighten-3">
-              <span>File</span>
-              <input type="file" name="capitalImg">
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text">
-            </div>
-            <div class="btn-floating deep-purple lighten-3" id="btnSubmit">
-              <i class="material-icons">send</i>
-            </div>
-          </form>
-          <form method="POST" enctype="multipart/form-data" id="testup">
-              <input type="text" name="extraField"/><br/><br/>
-              <input type="file" name="files"/><br/><br/>
-              <input type="file" name="files"/><br/><br/>
-              <div class="btn-floating deep-purple lighten-3" id="btnSubmit">
-                <i class="material-icons">send</i>
-              </div>
-            </form>
-
-
-          <br>
-          <br>
-        </li>
-      </ul>
-
-      <a href="#!" class="btn-floating deep-purple lighten-3" onclick="Materialize.showStaggeredList('#small-making')"><i class="material-icons">add</i></a>
-      <ul class="constainer" id="small-making">
-        <li style="opacity: 0;">
-          <h4><a class="deep-purple-text text-darken-3" href="#">Capital-making</a></h4>
-          <p>소문자로 쓴 '문장' 이미지를 입력해주세요 :-) </p>
-          <div class="btn deep-purple lighten-3">
+        <h5>대문자 입력</h5>
+        <div class="file-field input-field">
+          <div class="btn deep-purple">
             <span>File</span>
-            <input type="file" name="userfile">
+            <input id="font_capital_img" type="file">
           </div>
           <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
+            <input id="font_capital_path" class="file-path validate" type="text">
           </div>
-        </li>
-      </ul>
-      <br>
+        </div>
 
-      <a href="#!" class="btn-floating waves-effect deep-purple lighten-3" onclick="Materialize.showStaggeredList('#number-making')"><i class="material-icons">add</i></a>
-      <ul class="constainer" id="number-making">
-        <li style="opacity: 0;">
-          <h4><a href="#">number-making</a></h4>
-          <p>This is a description</p>
-        </li>
-      </ul>
-      <br>
+        <br><br>
+        <h5>소문자 입력</h5>
+        <div class="file-field input-field">
+          <div class="btn deep-purple">
+            <span>File</span>
+            <input id="font_small_img" type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input id="font_small_path" class="file-path validate" type="text">
+          </div>
+        </div>
 
-      <a href="#!" class="btn-floating waves-effect deep-purple lighten-3" onclick="Materialize.showStaggeredList('#special-making')"><i class="material-icons">add</i></a>
-      <ul class="constainer" id="special-making">
-        <li style="opacity: 0;">
+        <br><br>
+        <div class="right">
+          <button class="btn waves-effect waves-light deep-purple" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
 
-
-        </li>
-      </ul>
-
-
-
-
-      <!--
-          <form class="" action="upup" method="post" enctype="multipart/form-data">
-            <input type="file" name="userfile" value="">
-            <input type="submit" name="submit" value="submit">
-          </form>
-      -->
-
-    </div>
-  </form>
-
-
-  <br>
-  <div class="preloader-wrapper active">
-    <div class="spinner-layer">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div>
-      <div class="gap-patch">
-        <div class="circle"></div>
-      </div>
-      <div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
     </div>
   </div>
+
+  <div class="divider"></div>
+
+  <br>
+  <br>
 
 </div>
